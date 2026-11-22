@@ -8,7 +8,9 @@
     </picture>
   </a>
 </div>
+
 <br/>
+
 <!-- Quick Action Pill Bar -->
 <p align="center">
   <a href="https://www.linkedin.com/in/sandeepkv93">
@@ -27,6 +29,7 @@
     <img src="https://img.shields.io/badge/IEEE_LaTiCE-DSAdvisor-1A7F37?style=for-the-badge&logo=ieee&logoColor=white" alt="IEEE Publication DSAdvisor"/>
   </a>
 </p>
+
 <!-- Neofetch Telemetry Terminal (Auto-Refreshed Daily via GitHub Actions) -->
 <div align="center">
   <picture>
@@ -35,7 +38,9 @@
     <img alt="Sandeep Vishnu Neofetch Profile" src="./assets/terminal-dark.svg" width="100%">
   </picture>
 </div>
+
 <br/>
+
 <!-- Live GitHub Telemetry & Language Breakdown (Self-Hosted SVG) -->
 <div align="center">
   <picture>
@@ -44,8 +49,11 @@
     <img alt="GitHub Telemetry and Top Languages" src="./assets/stats-dark.svg" width="100%">
   </picture>
 </div>
+
 <br/>
+
 ## Engineering Journey
+
 <table>
   <tr>
     <td width="50%" valign="top">
@@ -75,9 +83,13 @@
     </td>
   </tr>
 </table>
+
 <br/>
+
 ## Beyond My Pinned Repos
+
 In addition to the 6 pinned repositories below, here are recent systems builds, tools, and live interactive demos:
+
 <table>
   <tr>
     <td width="50%" valign="top">
@@ -128,11 +140,15 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
     </td>
   </tr>
 </table>
+
 <p align="center">
   <a href="https://github.com/sandeepkv93/repo-index"><b>Explore the full categorized repository index &rarr;</b></a>
 </p>
+
 <br/>
+
 ## Core Stack
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=go,py,java,ts,c,kubernetes,docker,bazel,postgres,redis,rabbitmq,grafana,prometheus,react,tailwind,linux&perline=8&theme=dark">
@@ -140,8 +156,11 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
     <img src="https://skillicons.dev/icons?i=go,py,java,ts,c,kubernetes,docker,bazel,postgres,redis,rabbitmq,grafana,prometheus,react,tailwind,linux&perline=8&theme=dark" alt="Core Tech Stack"/>
   </picture>
 </div>
+
 <br/>
+
 ## Contribution Activity
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sandeepkv93/sandeepkv93/output/github-snake-dark.svg">
@@ -149,4 +168,5 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
     <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/sandeepkv93/sandeepkv93/output/github-snake-dark.svg" width="100%">
   </picture>
 </div>
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:29B5E8,100:6E40C9&height=100&section=footer" alt="Footer Wave"/>
