@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" width="920" height="390" role="img" aria-label="Sandeep Vishnu Neofetch Telemetry Card">
+  <style>
+    .chrome-title { font: 600 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8B949E; }
+    .header-user { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #29B5E8; }
+    .mono { font: 500 13.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .prompt { font: 600 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .meta { font: 500 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #6E7681; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes spinSlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    .ring { transform-origin: 135px 190px; animation: spinSlow 45s linear infinite; }
+  </style>
+  <rect x="1" y="1" width="918" height="388" rx="14" fill="#0D1117" stroke="#30363D" stroke-width="1.2"/>
+  <path d="M 15 1 H 905 A 14 14 0 0 1 919 15 V 38 H 1 V 15 A 14 14 0 0 1 15 1 Z" fill="#161B22"/>
+  <line x1="1" y1="38" x2="919" y2="38" stroke="#30363D" stroke-width="1"/>
+  <circle cx="22" cy="19.5" r="5.5" fill="#FF5F56"/>
+  <circle cx="40" cy="19.5" r="5.5" fill="#FFBD2E"/>
+  <circle cx="58" cy="19.5" r="5.5" fill="#27C93F"/>
+  <text x="460" y="23.5" text-anchor="middle" class="chrome-title">sandeep@snowflake-sis: ~ (zsh)</text>
+  <text x="900" y="23.5" text-anchor="end" class="meta">synced 2026-11-22</text>
+  <g>
+    <circle cx="135" cy="190" r="88" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="4 6" class="ring"/>
+    <circle cx="135" cy="190" r="66" fill="#161B22" stroke="#29B5E8" stroke-width="1.5" opacity="0.9"/>
+    <g transform="translate(135, 190)" stroke="#29B5E8" stroke-width="2.8" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-44" x2="0" y2="44"/>
+      <line x1="-38.1" y1="-22" x2="38.1" y2="22"/>
+      <line x1="-38.1" y1="22" x2="38.1" y2="-22"/>
+      <polyline points="-10,-32 0,-22 10,-32"/>
+      <polyline points="-10,32 0,22 10,32"/>
+      <polyline points="-32,-7 -19,-11 -22,-24"/>
+      <polyline points="32,7 19,11 22,24"/>
+      <polyline points="-32,7 -19,11 -22,24"/>
+      <polyline points="32,-7 19,-11 22,-24"/>
+      <polygon points="0,-11 9.5,-5.5 9.5,5.5 0,11 -9.5,5.5 -9.5,-5.5" fill="#0D1117" stroke="#58A6FF" stroke-width="2"/>
+    </g>
+    <g transform="translate(69, 305)">
+      <rect x="0" y="0" width="18" height="10" rx="3" fill="#29B5E8"/>
+      <rect x="23" y="0" width="18" height="10" rx="3" fill="#58A6FF"/>
+      <rect x="46" y="0" width="18" height="10" rx="3" fill="#3FB950"/>
+      <rect x="69" y="0" width="18" height="10" rx="3" fill="#FFA657"/>
+      <rect x="92" y="0" width="18" height="10" rx="3" fill="#D2A8FF"/>
+      <rect x="115" y="0" width="18" height="10" rx="3" fill="#8B949E"/>
+    </g>
+    <text x="135" y="336" text-anchor="middle" class="meta">SANDEEP VISHNU // SEATTLE</text>
+  </g>
+  <line x1="252" y1="58" x2="252" y2="348" stroke="#30363D" stroke-width="1"/>
+  <text x="275" y="72" class="header-user">sandeepkv93<tspan fill="#8B949E">@</tspan><tspan fill="#58A6FF">snowflake-data-cloud</tspan></text>
+  <line x1="275" y1="82" x2="890" y2="82" stroke="#30363D" stroke-width="1"/>
+    <text x="275" y="104" class="mono"><tspan fill="#FFA657" font-weight="700">role</tspan><tspan fill="#6E7681"> ......... </tspan><tspan fill="#29B5E8">Senior Software Engineer @ Snowflake (SiS)</tspan></text>
+    <text x="275" y="130" class="mono"><tspan fill="#FFA657" font-weight="700">experience</tspan><tspan fill="#6E7681"> ... </tspan><tspan fill="#E6EDF3">11+ yrs (Snowflake, Microsoft Azure, VMware)</tspan></text>
+    <text x="275" y="156" class="mono"><tspan fill="#FFA657" font-weight="700">education</tspan><tspan fill="#6E7681"> .... </tspan><tspan fill="#E6EDF3">M.S. Computer Science, Stony Brook University</tspan></text>
+    <text x="275" y="182" class="mono"><tspan fill="#FFA657" font-weight="700">focus</tspan><tspan fill="#6E7681"> ........ </tspan><tspan fill="#58A6FF">Cloud-Native Runtimes, Distributed Systems, OpenTelemetry</tspan></text>
+    <text x="275" y="208" class="mono"><tspan fill="#FFA657" font-weight="700">languages</tspan><tspan fill="#6E7681"> .... </tspan><tspan fill="#3FB950">Go, Python, Java, TypeScript, C</tspan></text>
+    <text x="275" y="234" class="mono"><tspan fill="#FFA657" font-weight="700">infra</tspan><tspan fill="#6E7681"> ........ </tspan><tspan fill="#E6EDF3">Kubernetes, Docker, Bazel, Prometheus, Grafana, RabbitMQ</tspan></text>
+    <text x="275" y="260" class="mono"><tspan fill="#FFA657" font-weight="700">patent</tspan><tspan fill="#6E7681"> ....... </tspan><tspan fill="#D2A8FF">US12056521B2 (ML Spot VM Replenishment, Azure)</tspan></text>
+    <text x="275" y="286" class="mono"><tspan fill="#FFA657" font-weight="700">publication</tspan><tspan fill="#6E7681"> .. </tspan><tspan fill="#E6EDF3">DSAdvisor (IEEE LaTiCE 2016)</tspan></text>
+    <text x="275" y="312" class="mono"><tspan fill="#FFA657" font-weight="700">github.live</tspan><tspan fill="#6E7681"> .. </tspan><tspan fill="#FFA657">83 public repos | 604 contribs/yr | 15 stars</tspan></text>
+  <line x1="275" y1="338" x2="890" y2="338" stroke="#30363D" stroke-width="1"/>
+  <text x="275" y="364" class="prompt">
+    <tspan fill="#3FB950">&#10140;</tspan>
+    <tspan fill="#29B5E8"> ~/systems </tspan>
+    <tspan fill="#8B949E">$</tspan>
+    <tspan fill="#E6EDF3"> kubectl get pods -n telemetry --watch</tspan>
+  </text>
+  <rect x="652" y="352" width="8" height="15" rx="1.5" fill="#29B5E8" class="cursor"/>
+</svg>

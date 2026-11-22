@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" width="920" height="190" role="img" aria-label="Sandeep Vishnu - Senior Software Engineer at Snowflake">
+  <defs>
+    <linearGradient id="bgGrad-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="55%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#1C2330"/>
+    </linearGradient>
+    <linearGradient id="accentGrad-dark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#29B5E8"/>
+      <stop offset="50%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#D2A8FF"/>
+    </linearGradient>
+    <radialGradient id="orb1-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#29B5E8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#29B5E8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2-dark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D2A8FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#D2A8FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotGrid-dark" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1F2937"/>
+    </pattern>
+    <clipPath id="cardClip-dark">
+      <rect x="1" y="1" width="918" height="188" rx="16"/>
+    </clipPath>
+  </defs>
+  <style>
+    .title { font: 800 34px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #E6EDF3; letter-spacing: -0.5px; }
+    .sub { font: 600 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #29B5E8; }
+    .tagline { font: 400 13.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #8B949E; }
+    .badge-txt { font: 600 11.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #E6EDF3; }
+    .mono-small { font: 500 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #8B949E; }
+    @keyframes pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+    @keyframes floatSlow { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+    @keyframes dashFlow { to { stroke-dashoffset: -36; } }
+    .node-pulse { animation: pulse 3.2s ease-in-out infinite; }
+    .node-pulse-2 { animation: pulse 4.1s ease-in-out 0.9s infinite; }
+    .node-pulse-3 { animation: pulse 3.6s ease-in-out 1.7s infinite; }
+    .flow-line { stroke-dasharray: 4 5; animation: dashFlow 3.5s linear infinite; }
+    .status-dot { animation: pulse 2s ease-in-out infinite; }
+    .snowflake-group { animation: floatSlow 5s ease-in-out infinite; }
+  </style>
+  <g clip-path="url(#cardClip-dark)">
+    <rect x="0" y="0" width="920" height="190" fill="url(#bgGrad-dark)"/>
+    <rect x="0" y="0" width="920" height="190" fill="url(#dotGrid-dark)" opacity="0.7"/>
+    <circle cx="810" cy="70" r="170" fill="url(#orb1-dark)"/>
+    <circle cx="140" cy="175" r="150" fill="url(#orb2-dark)"/>
+    <rect x="0" y="0" width="920" height="3.5" fill="url(#accentGrad-dark)"/>
+    <g transform="translate(40, 42)">
+      <rect x="0" y="0" width="292" height="24" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <circle cx="14" cy="12" r="4" fill="#3FB950" class="status-dot"/>
+      <text x="26" y="16" class="badge-txt">Building Streamlit in Snowflake (SiS)</text>
+      <text x="0" y="66" class="title">Sandeep Vishnu</text>
+      <text x="0" y="92" class="sub">Senior Software Engineer @ Snowflake  |  Greater Seattle Area</text>
+      <text x="0" y="116" class="tagline">Distributed Systems  &#183;  Cloud-Native Platforms  &#183;  OpenTelemetry  &#183;  Go &amp; Python</text>
+    </g>
+    <g transform="translate(650, 18)">
+      <line x1="55" y1="78" x2="128" y2="38" stroke="#29B5E8" stroke-width="1.4" opacity="0.65" class="flow-line"/>
+      <line x1="128" y1="38" x2="205" y2="78" stroke="#58A6FF" stroke-width="1.4" opacity="0.65" class="flow-line"/>
+      <line x1="205" y1="78" x2="128" y2="118" stroke="#D2A8FF" stroke-width="1.4" opacity="0.65" class="flow-line"/>
+      <line x1="128" y1="118" x2="55" y2="78" stroke="#3FB950" stroke-width="1.4" opacity="0.65" class="flow-line"/>
+      <line x1="55" y1="78" x2="205" y2="78" stroke="#29B5E8" stroke-width="1" opacity="0.35" class="flow-line"/>
+      <line x1="128" y1="38" x2="128" y2="118" stroke="#29B5E8" stroke-width="1" opacity="0.35" class="flow-line"/>
+      <g class="snowflake-group" transform="translate(128, 78)">
+        <circle r="24" fill="#161B22" stroke="#29B5E8" stroke-width="1.8"/>
+        <g stroke="#29B5E8" stroke-width="2" stroke-linecap="round">
+          <line x1="0" y1="-14" x2="0" y2="14"/>
+          <line x1="-12.1" y1="-7" x2="12.1" y2="7"/>
+          <line x1="-12.1" y1="7" x2="12.1" y2="-7"/>
+          <polyline points="-3.5,-10 0,-7 3.5,-10" fill="none"/>
+          <polyline points="-3.5,10 0,7 3.5,10" fill="none"/>
+          <polyline points="-10,-2 -6.5,-3.8 -7.2,-7.8" fill="none"/>
+          <polyline points="10,2 6.5,3.8 7.2,7.8" fill="none"/>
+          <polyline points="-10,2 -6.5,3.8 -7.2,7.8" fill="none"/>
+          <polyline points="10,-2 6.5,-3.8 7.2,-7.8" fill="none"/>
+        </g>
+      </g>
+      <g class="node-pulse">
+        <circle cx="128" cy="30" r="12" fill="#161B22" stroke="#58A6FF" stroke-width="1.5"/>
+        <text x="128" y="34" text-anchor="middle" class="mono-small" fill="#58A6FF">K8s</text>
+      </g>
+      <g class="node-pulse-2">
+        <circle cx="208" cy="78" r="14" fill="#161B22" stroke="#D2A8FF" stroke-width="1.5"/>
+        <text x="208" y="82" text-anchor="middle" class="mono-small" fill="#D2A8FF">OTel</text>
+      </g>
+      <g class="node-pulse-3">
+        <circle cx="128" cy="126" r="12" fill="#161B22" stroke="#3FB950" stroke-width="1.5"/>
+        <text x="128" y="130" text-anchor="middle" class="mono-small" fill="#3FB950">Go</text>
+      </g>
+      <g class="node-pulse">
+        <circle cx="48" cy="78" r="14" fill="#161B22" stroke="#FFA657" stroke-width="1.5"/>
+        <text x="48" y="82" text-anchor="middle" class="mono-small" fill="#FFA657">Raft</text>
+      </g>
+      <text x="128" y="156" text-anchor="middle" class="mono-small">cloud-native &#183; resilient &#183; observable</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="918" height="188" rx="16" fill="none" stroke="#30363D" stroke-width="1.2"/>
+</svg>
