@@ -129,9 +129,9 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/sandeepkv93/distributed-systems-visualizer"><b>distributed-systems-visualizer</b></a>
-      <a href="https://sandeepkv93.github.io/distributed-systems-visualizer/"><img src="https://img.shields.io/badge/Live_Demo-29B5E8?style=flat-square" align="right"/></a><br/>
-      Interactive visual simulations for learning distributed systems with step controls and theory articles.
+      <a href="https://github.com/sandeepkv93/go-saga-lab"><b>go-saga-lab</b></a>
+      <img src="https://img.shields.io/badge/Go_%2B_PostgreSQL-00ADD8?style=flat-square&logo=go&logoColor=white" align="right"/><br/>
+      Saga lifecycle orchestration in Go with explicit state transitions, PostgreSQL persistence, and a durable outbox dispatcher.
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/sandeepkv93/oidc-flow-demo"><b>oidc-flow-demo</b></a>
@@ -142,7 +142,7 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
 </table>
 
 <p align="center">
-  <a href="https://github.com/sandeepkv93/repo-index"><b>Explore the full categorized repository index &rarr;</b></a>
+  Interactive distributed systems simulations from my pinned repos are live at <a href="https://sandeepkv93.github.io/distributed-systems-visualizer/"><b>distributed-systems-visualizer</b></a> &middot; <a href="https://github.com/sandeepkv93/repo-index"><b>Explore the full categorized repository index &rarr;</b></a>
 </p>
 
 <br/>
@@ -169,4 +169,10 @@ In addition to the 6 pinned repositories below, here are recent systems builds, 
   </picture>
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:29B5E8,100:6E40C9&height=100&section=footer" alt="Footer Wave"/>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg">
+    <img alt="Footer Wave" src="./assets/footer-dark.svg" width="100%">
+  </picture>
+</div>

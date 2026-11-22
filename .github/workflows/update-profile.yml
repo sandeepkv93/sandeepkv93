@@ -8,16 +8,20 @@ on:
       - main
     paths:
       - "scripts/update_profile.py"
+      - ".github/workflows/update-profile.yml"
 permissions:
   contents: write
+concurrency:
+  group: update-profile-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   update-svgs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Regenerate dark/light telemetry SVGs
@@ -45,7 +49,7 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
       - name: Publish snake SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist

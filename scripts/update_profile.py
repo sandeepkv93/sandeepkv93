@@ -139,6 +139,8 @@ def fetch_github_stats() -> dict[str, Any]:
     lang_counts: Counter[str] = Counter()
     lang_colors: dict[str, str] = {}
     for r in public_repos:
+        if r["name"].lower() == USERNAME.lower():
+            continue
         pl = r.get("primaryLanguage")
         if pl and pl.get("name"):
             name = pl["name"]
@@ -146,10 +148,21 @@ def fetch_github_stats() -> dict[str, Any]:
             lang_colors[name] = pl.get("color") or LANG_FALLBACK_COLORS.get(name, "#29B5E8")
     top_langs = []
     top_items = lang_counts.most_common(5)
-    total_lang_repos = sum(c for _, c in top_items) or 1
-    for name, count in top_items:
-        pct = round((count / total_lang_repos) * 100, 1)
-        top_langs.append({"name": name, "count": count, "pct": pct, "color": lang_colors[name]})
+    if top_items:
+        total_lang_repos = sum(c for _, c in top_items)
+        exact_tenths = [(name, count, (count * 1000) / total_lang_repos) for name, count in top_items]
+        floored = [int(t) for _, _, t in exact_tenths]
+        remainder = 1000 - sum(floored)
+        order = sorted(
+            range(len(exact_tenths)),
+            key=lambda i: (exact_tenths[i][2] - floored[i], exact_tenths[i][1]),
+            reverse=True,
+        )
+        for idx in order[:remainder]:
+            floored[idx] += 1
+        for (name, count, _), tenths in zip(exact_tenths, floored):
+            pct = tenths / 10.0
+            top_langs.append({"name": name, "count": count, "pct": pct, "color": lang_colors[name]})
     contrib = user["contributionsCollection"]
     today = dt.date.today()
     years_exp = (today - CAREER_START).days / 365.25
@@ -347,13 +360,7 @@ def render_terminal_svg(mode: str, stats: dict[str, Any]) -> str:
   <line x1="275" y1="82" x2="890" y2="82" stroke="{t['border']}" stroke-width="1"/>
 {rows_svg}
   <line x1="275" y1="338" x2="890" y2="338" stroke="{t['border']}" stroke-width="1"/>
-  <text x="275" y="364" class="prompt">
-    <tspan fill="{t['accent3']}">&#10140;</tspan>
-    <tspan fill="{t['accent']}"> ~/systems </tspan>
-    <tspan fill="{t['muted']}">$</tspan>
-    <tspan fill="{t['text']}"> kubectl get pods -n telemetry --watch</tspan>
-  </text>
-  <rect x="652" y="352" width="8" height="15" rx="1.5" fill="{t['accent']}" class="cursor"/>
+  <text x="275" y="364" class="prompt"><tspan fill="{t['accent3']}">&#10140;</tspan><tspan fill="{t['accent']}"> ~/systems </tspan><tspan fill="{t['muted']}">$</tspan><tspan fill="{t['text']}"> kubectl get pods -n telemetry --watch </tspan><tspan fill="{t['accent']}" class="cursor">&#9608;</tspan></text>
 </svg>
 """
 def render_stats_svg(mode: str, stats: dict[str, Any]) -> str:
@@ -427,6 +434,42 @@ def render_stats_svg(mode: str, stats: dict[str, Any]) -> str:
 {chr(10).join(lang_rows)}
 </svg>
 """
+def render_footer_svg(mode: str) -> str:
+    t = THEMES[mode]
+    grad_start = "#161B22" if mode == "dark" else "#DCEBFA"
+    grad_mid = t["accent"]
+    grad_end = "#6E40C9" if mode == "dark" else t["accent4"]
+    back_op = "0.24" if mode == "dark" else "0.18"
+    mid_op = "0.45" if mode == "dark" else "0.34"
+    front_op = "0.92" if mode == "dark" else "0.84"
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 100" width="920" height="100" role="img" aria-label="Footer Wave">
+  <defs>
+    <linearGradient id="footerGrad-{mode}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{grad_start}"/>
+      <stop offset="52%" stop-color="{grad_mid}"/>
+      <stop offset="100%" stop-color="{grad_end}"/>
+    </linearGradient>
+    <linearGradient id="footerGradRev-{mode}" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{grad_end}"/>
+      <stop offset="50%" stop-color="{t['accent2']}"/>
+      <stop offset="100%" stop-color="{grad_mid}"/>
+    </linearGradient>
+    <clipPath id="footerClip-{mode}">
+      <path d="M 0 0 H 920 V 86 A 14 14 0 0 1 906 100 H 14 A 14 14 0 0 1 0 86 Z"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes waveBreath {{ 0%, 100% {{ opacity: {back_op}; }} 50% {{ opacity: {mid_op}; }} }}
+    .wave-back {{ animation: waveBreath 6s ease-in-out infinite; }}
+  </style>
+  <g clip-path="url(#footerClip-{mode})">
+    <path d="M 0 42 C 180 12, 340 72, 540 38 C 700 10, 820 56, 920 30 L 920 100 L 0 100 Z" fill="url(#footerGradRev-{mode})" opacity="{back_op}" class="wave-back"/>
+    <path d="M 0 56 C 210 24, 390 82, 600 46 C 750 20, 840 62, 920 44 L 920 100 L 0 100 Z" fill="url(#footerGrad-{mode})" opacity="{mid_op}"/>
+    <path d="M 0 68 C 190 40, 360 90, 560 58 C 720 34, 830 76, 920 56 L 920 100 L 0 100 Z" fill="url(#footerGrad-{mode})" opacity="{front_op}"/>
+  </g>
+</svg>
+"""
 def main() -> None:
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     stats = fetch_github_stats()
@@ -435,8 +478,9 @@ def main() -> None:
             (f"banner-{mode}.svg", render_banner_svg(mode)),
             (f"terminal-{mode}.svg", render_terminal_svg(mode, stats)),
             (f"stats-{mode}.svg", render_stats_svg(mode, stats)),
+            (f"footer-{mode}.svg", render_footer_svg(mode)),
         ):
             (ASSETS_DIR / name).write_text(content, encoding="utf-8")
-    print(f"Generated 6 SVGs in {ASSETS_DIR}")
+    print(f"Generated 8 SVGs in {ASSETS_DIR}")
 if __name__ == "__main__":
     main()

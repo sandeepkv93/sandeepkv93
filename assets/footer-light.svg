@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 100" width="920" height="100" role="img" aria-label="Footer Wave">
+  <defs>
+    <linearGradient id="footerGrad-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCEBFA"/>
+      <stop offset="52%" stop-color="#0B86B8"/>
+      <stop offset="100%" stop-color="#8250DF"/>
+    </linearGradient>
+    <linearGradient id="footerGradRev-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8250DF"/>
+      <stop offset="50%" stop-color="#0969DA"/>
+      <stop offset="100%" stop-color="#0B86B8"/>
+    </linearGradient>
+    <clipPath id="footerClip-light">
+      <path d="M 0 0 H 920 V 86 A 14 14 0 0 1 906 100 H 14 A 14 14 0 0 1 0 86 Z"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes waveBreath { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.34; } }
+    .wave-back { animation: waveBreath 6s ease-in-out infinite; }
+  </style>
+  <g clip-path="url(#footerClip-light)">
+    <path d="M 0 42 C 180 12, 340 72, 540 38 C 700 10, 820 56, 920 30 L 920 100 L 0 100 Z" fill="url(#footerGradRev-light)" opacity="0.18" class="wave-back"/>
+    <path d="M 0 56 C 210 24, 390 82, 600 46 C 750 20, 840 62, 920 44 L 920 100 L 0 100 Z" fill="url(#footerGrad-light)" opacity="0.34"/>
+    <path d="M 0 68 C 190 40, 360 90, 560 58 C 720 34, 830 76, 920 56 L 920 100 L 0 100 Z" fill="url(#footerGrad-light)" opacity="0.84"/>
+  </g>
+</svg>
