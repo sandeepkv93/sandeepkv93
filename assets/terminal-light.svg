@@ -55,7 +55,7 @@
     <text x="275" y="234" class="mono"><tspan fill="#BC4C00" font-weight="700">infra</tspan><tspan fill="#6E7781"> ........ </tspan><tspan fill="#1F2328">Kubernetes, Docker, Bazel, Prometheus, Grafana, RabbitMQ</tspan></text>
     <text x="275" y="260" class="mono"><tspan fill="#BC4C00" font-weight="700">patent</tspan><tspan fill="#6E7781"> ....... </tspan><tspan fill="#8250DF">US12056521B2 (ML Spot VM Replenishment, Azure)</tspan></text>
     <text x="275" y="286" class="mono"><tspan fill="#BC4C00" font-weight="700">publication</tspan><tspan fill="#6E7781"> .. </tspan><tspan fill="#1F2328">DSAdvisor (IEEE LaTiCE 2016)</tspan></text>
-    <text x="275" y="312" class="mono"><tspan fill="#BC4C00" font-weight="700">github.live</tspan><tspan fill="#6E7781"> .. </tspan><tspan fill="#BC4C00">83 public repos | 606 contribs/yr | 15 stars</tspan></text>
+    <text x="275" y="312" class="mono"><tspan fill="#BC4C00" font-weight="700">github.live</tspan><tspan fill="#6E7781"> .. </tspan><tspan fill="#BC4C00">83 public repos | 607 contribs/yr | 15 stars</tspan></text>
   <line x1="275" y1="338" x2="890" y2="338" stroke="#D0D7DE" stroke-width="1"/>
   <text x="275" y="364" class="prompt"><tspan fill="#1A7F37">&#10140;</tspan><tspan fill="#0B86B8"> ~/systems </tspan><tspan fill="#59636E">$</tspan><tspan fill="#1F2328"> kubectl get pods -n telemetry --watch </tspan><tspan fill="#0B86B8" class="cursor">&#9608;</tspan></text>
 </svg>
