@@ -13,6 +13,9 @@
 
 <!-- Quick Action Pill Bar -->
 <p align="center">
+  <a href="https://sandeepkv93.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=github&logoColor=29B5E8" alt="Portfolio Website"/>
+  </a>
   <a href="https://www.linkedin.com/in/sandeepkv93">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
