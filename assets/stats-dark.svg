@@ -16,10 +16,10 @@
   <text x="28" y="34" class="sec-title">GitHub Telemetry</text>
   <text x="415" y="34" text-anchor="end" class="foot">AUTO-SYNCED DAILY</text>
   <line x1="28" y1="48" x2="418" y2="48" stroke="#30363D" stroke-width="1"/>
-    <circle cx="38" cy="72" r="4" fill="#3FB950"/>    <text x="52" y="76" class="label">Contributions (12m)</text>    <text x="415" y="76" text-anchor="end" class="val" fill="#3FB950">607</text>
+    <circle cx="38" cy="72" r="4" fill="#3FB950"/>    <text x="52" y="76" class="label">Contributions (12m)</text>    <text x="415" y="76" text-anchor="end" class="val" fill="#3FB950">601</text>
     <circle cx="38" cy="100" r="4" fill="#29B5E8"/>    <text x="52" y="104" class="label">Public Repositories</text>    <text x="415" y="104" text-anchor="end" class="val" fill="#29B5E8">83</text>
     <circle cx="38" cy="128" r="4" fill="#58A6FF"/>    <text x="52" y="132" class="label">Pull Requests</text>    <text x="415" y="132" text-anchor="end" class="val" fill="#58A6FF">41</text>
-    <circle cx="38" cy="156" r="4" fill="#FFA657"/>    <text x="52" y="160" class="label">Stars Earned</text>    <text x="415" y="160" text-anchor="end" class="val" fill="#FFA657">15</text>
+    <circle cx="38" cy="156" r="4" fill="#FFA657"/>    <text x="52" y="160" class="label">Stars Earned</text>    <text x="415" y="160" text-anchor="end" class="val" fill="#FFA657">14</text>
     <circle cx="38" cy="184" r="4" fill="#D2A8FF"/>    <text x="52" y="188" class="label">Followers</text>    <text x="415" y="188" text-anchor="end" class="val" fill="#D2A8FF">24</text>
   <rect x="462" y="1" width="457" height="224" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
   <text x="485" y="34" class="sec-title">Top Languages (Public Repos)</text>
@@ -27,15 +27,15 @@
   <line x1="485" y1="48" x2="880" y2="48" stroke="#30363D" stroke-width="1"/>
   <g clip-path="url(#langBarClip-dark)">
     <rect x="485" y="66" width="395" height="12" fill="#21262D"/>
-      <rect x="485.0" y="66" width="149.7" height="12" fill="#00ADD8"/>
-      <rect x="634.7" y="66" width="101.5" height="12" fill="#b07219"/>
-      <rect x="736.2" y="66" width="77.8" height="12" fill="#3572A5"/>
-      <rect x="814.0" y="66" width="35.9" height="12" fill="#3178c6"/>
-      <rect x="850.0" y="66" width="30.0" height="12" fill="#f1e05a"/>
+      <rect x="485.0" y="66" width="147.3" height="12" fill="#00ADD8"/>
+      <rect x="632.3" y="66" width="100.3" height="12" fill="#b07219"/>
+      <rect x="732.7" y="66" width="76.6" height="12" fill="#3572A5"/>
+      <rect x="809.3" y="66" width="35.5" height="12" fill="#3178c6"/>
+      <rect x="844.8" y="66" width="35.2" height="12" fill="#f1e05a"/>
   </g>
-    <circle cx="491" cy="102" r="4.5" fill="#00ADD8"/>    <text x="504" y="106" class="label">Go</text>    <rect x="615" y="96" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="96" width="73.9" height="8" rx="4" fill="#00ADD8"/>    <text x="880" y="106" text-anchor="end" class="pct">37.9%</text>
-    <circle cx="491" cy="126" r="4.5" fill="#b07219"/>    <text x="504" y="130" class="label">Java</text>    <rect x="615" y="120" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="120" width="50.1" height="8" rx="4" fill="#b07219"/>    <text x="880" y="130" text-anchor="end" class="pct">25.7%</text>
-    <circle cx="491" cy="150" r="4.5" fill="#3572A5"/>    <text x="504" y="154" class="label">Python</text>    <rect x="615" y="144" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="144" width="38.4" height="8" rx="4" fill="#3572A5"/>    <text x="880" y="154" text-anchor="end" class="pct">19.7%</text>
-    <circle cx="491" cy="174" r="4.5" fill="#3178c6"/>    <text x="504" y="178" class="label">TypeScript</text>    <rect x="615" y="168" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="168" width="17.7" height="8" rx="4" fill="#3178c6"/>    <text x="880" y="178" text-anchor="end" class="pct">9.1%</text>
-    <circle cx="491" cy="198" r="4.5" fill="#f1e05a"/>    <text x="504" y="202" class="label">JavaScript</text>    <rect x="615" y="192" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="192" width="14.8" height="8" rx="4" fill="#f1e05a"/>    <text x="880" y="202" text-anchor="end" class="pct">7.6%</text>
+    <circle cx="491" cy="102" r="4.5" fill="#00ADD8"/>    <text x="504" y="106" class="label">Go</text>    <rect x="615" y="96" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="96" width="72.7" height="8" rx="4" fill="#00ADD8"/>    <text x="880" y="106" text-anchor="end" class="pct">37.3%</text>
+    <circle cx="491" cy="126" r="4.5" fill="#b07219"/>    <text x="504" y="130" class="label">Java</text>    <rect x="615" y="120" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="120" width="49.5" height="8" rx="4" fill="#b07219"/>    <text x="880" y="130" text-anchor="end" class="pct">25.4%</text>
+    <circle cx="491" cy="150" r="4.5" fill="#3572A5"/>    <text x="504" y="154" class="label">Python</text>    <rect x="615" y="144" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="144" width="37.8" height="8" rx="4" fill="#3572A5"/>    <text x="880" y="154" text-anchor="end" class="pct">19.4%</text>
+    <circle cx="491" cy="174" r="4.5" fill="#3178c6"/>    <text x="504" y="178" class="label">TypeScript</text>    <rect x="615" y="168" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="168" width="17.6" height="8" rx="4" fill="#3178c6"/>    <text x="880" y="178" text-anchor="end" class="pct">9.0%</text>
+    <circle cx="491" cy="198" r="4.5" fill="#f1e05a"/>    <text x="504" y="202" class="label">JavaScript</text>    <rect x="615" y="192" width="195" height="8" rx="4" fill="#21262D"/>    <rect x="615" y="192" width="17.4" height="8" rx="4" fill="#f1e05a"/>    <text x="880" y="202" text-anchor="end" class="pct">8.9%</text>
 </svg>

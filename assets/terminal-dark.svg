@@ -18,7 +18,7 @@
   <circle cx="40" cy="19.5" r="5.5" fill="#FFBD2E"/>
   <circle cx="58" cy="19.5" r="5.5" fill="#27C93F"/>
   <text x="460" y="23.5" text-anchor="middle" class="chrome-title">sandeep@snowflake-sis: ~ (zsh)</text>
-  <text x="900" y="23.5" text-anchor="end" class="meta">synced 2026-11-22</text>
+  <text x="900" y="23.5" text-anchor="end" class="meta">synced 2026-11-23</text>
   <g>
     <circle cx="135" cy="190" r="88" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="4 6" class="ring"/>
     <circle cx="135" cy="190" r="66" fill="#161B22" stroke="#29B5E8" stroke-width="1.5" opacity="0.9"/>
@@ -55,7 +55,7 @@
     <text x="275" y="234" class="mono"><tspan fill="#FFA657" font-weight="700">infra</tspan><tspan fill="#6E7681"> ........ </tspan><tspan fill="#E6EDF3">Kubernetes, Docker, Bazel, Prometheus, Grafana, RabbitMQ</tspan></text>
     <text x="275" y="260" class="mono"><tspan fill="#FFA657" font-weight="700">patent</tspan><tspan fill="#6E7681"> ....... </tspan><tspan fill="#D2A8FF">US12056521B2 (ML Spot VM Replenishment, Azure)</tspan></text>
     <text x="275" y="286" class="mono"><tspan fill="#FFA657" font-weight="700">publication</tspan><tspan fill="#6E7681"> .. </tspan><tspan fill="#E6EDF3">DSAdvisor (IEEE LaTiCE 2016)</tspan></text>
-    <text x="275" y="312" class="mono"><tspan fill="#FFA657" font-weight="700">github.live</tspan><tspan fill="#6E7681"> .. </tspan><tspan fill="#FFA657">83 public repos | 607 contribs/yr | 15 stars</tspan></text>
+    <text x="275" y="312" class="mono"><tspan fill="#FFA657" font-weight="700">github.live</tspan><tspan fill="#6E7681"> .. </tspan><tspan fill="#FFA657">83 public repos | 601 contribs/yr | 14 stars</tspan></text>
   <line x1="275" y1="338" x2="890" y2="338" stroke="#30363D" stroke-width="1"/>
   <text x="275" y="364" class="prompt"><tspan fill="#3FB950">&#10140;</tspan><tspan fill="#29B5E8"> ~/systems </tspan><tspan fill="#8B949E">$</tspan><tspan fill="#E6EDF3"> kubectl get pods -n telemetry --watch </tspan><tspan fill="#29B5E8" class="cursor">&#9608;</tspan></text>
 </svg>
