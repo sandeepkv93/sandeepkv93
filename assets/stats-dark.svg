@@ -16,11 +16,11 @@
   <text x="28" y="34" class="sec-title">GitHub Telemetry</text>
   <text x="415" y="34" text-anchor="end" class="foot">AUTO-SYNCED DAILY</text>
   <line x1="28" y1="48" x2="418" y2="48" stroke="#30363D" stroke-width="1"/>
-    <circle cx="38" cy="72" r="4" fill="#3FB950"/>    <text x="52" y="76" class="label">Contributions (12m)</text>    <text x="415" y="76" text-anchor="end" class="val" fill="#3FB950">645</text>
+    <circle cx="38" cy="72" r="4" fill="#3FB950"/>    <text x="52" y="76" class="label">Contributions (12m)</text>    <text x="415" y="76" text-anchor="end" class="val" fill="#3FB950">687</text>
     <circle cx="38" cy="100" r="4" fill="#29B5E8"/>    <text x="52" y="104" class="label">Public Repositories</text>    <text x="415" y="104" text-anchor="end" class="val" fill="#29B5E8">82</text>
     <circle cx="38" cy="128" r="4" fill="#58A6FF"/>    <text x="52" y="132" class="label">Pull Requests</text>    <text x="415" y="132" text-anchor="end" class="val" fill="#58A6FF">41</text>
     <circle cx="38" cy="156" r="4" fill="#FFA657"/>    <text x="52" y="160" class="label">Stars Earned</text>    <text x="415" y="160" text-anchor="end" class="val" fill="#FFA657">14</text>
-    <circle cx="38" cy="184" r="4" fill="#D2A8FF"/>    <text x="52" y="188" class="label">Followers</text>    <text x="415" y="188" text-anchor="end" class="val" fill="#D2A8FF">25</text>
+    <circle cx="38" cy="184" r="4" fill="#D2A8FF"/>    <text x="52" y="188" class="label">Followers</text>    <text x="415" y="188" text-anchor="end" class="val" fill="#D2A8FF">24</text>
   <rect x="462" y="1" width="457" height="224" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
   <text x="485" y="34" class="sec-title">Top Languages (Public Repos)</text>
   <text x="880" y="34" text-anchor="end" class="foot">OWNED CODEBASES</text>
